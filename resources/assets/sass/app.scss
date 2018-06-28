@@ -1,0 +1,160 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body {
+    height: 100%;
+    background-color: $body-bg-color;
+    font-family: $doc-font-style;
+}
+
+/*Edit Page*/
+.card {
+  width: 100%;
+  box-shadow: 3px 3px 0 rgba(112, 111, 111, 0.493);
+  margin: 50px 0px 50px 100px;
+}
+
+.form-group,
+.img-area {
+  margin: 0px 20px 0px 20px;
+}
+
+.card-header {
+  background-color: $card-header-color;    
+}
+
+.card-header h4 {
+  margin-top: 10px;    
+}
+
+.img-area {
+  padding-top: 30px;
+  margin-bottom: 40px;
+  height: 200px;
+}
+
+.img-info {
+  font-size: 12px;
+}
+
+.img-area img {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(134, 131, 126);
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 60px;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  margin: 7px 0 0 5px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 0 30px #92929285;
+}
+
+#edit-form #btn-save-edit {
+  width: 100px;
+}
+
+label,
+.card-header,
+.img-info {
+  color: #949494 !important;
+}
+
+.btn-file {
+  font-weight: 700;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
+}
+
+.footer {
+  background-color: $card-footer-color;
+  margin: 50px -21px -21px -21px;
+  padding: 30px 0px 30px 0px;
+}
+
+.footer .btn {
+  float: right;
+  width: 120px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  margin-right: 25px;
+}
+
+/*Menu*/
+.nav-bar {
+  height: 100%;
+  width: 60px;
+  background-color: $menu-bg-color;
+  position: fixed;
+}
+
+.app-logo img {
+  width: 60px;
+  margin: -20px 0px -20px 0px;
+  padding-bottom: 20px;
+}
+
+.nav-bar ul {
+  height: 100%;
+  margin-top: -20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar li {
+  position: relative;
+  margin: 0px 0px 0px -40px;
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-bar li a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+.nav-bar li:hover {
+  background-color: $menu-icon-color-hov;
+}
+
+.nav-bar .fas,
+.far,
+.fab {
+  color: $menu-icon-color;
+}
